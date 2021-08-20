@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+#drum-machine{
+    background-color: #b3b3b3;
+    height: 316px;
+    width: 660px;
+    justify-self: center;
+    align-self: center;
+    border: 5px solid #ffa500;
+    display: grid;
+    grid-template-columns:  341px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+    display: grid;
+    height: 100vh;
+    width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drum-pad{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #808080;
+    box-shadow: black 3px 3px 5px;
+    float: left;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-top: 33px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#letras {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 100%;
+    width: 330px;
+    grid-area: 1/1/2/2;
+    margin-left: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+#Shaker {
+    align-self: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#OpenHH {
+    align-self: center;
+}
+#ClosedHH {
+    align-self: center;
+}
+#Chord1{
+    align-self: end;
+}
+#Chord2{
+    align-self: end;
+}
+#Chord3{
+    align-self: end;
+}
+.derecha{
+    grid-area: 1/2/2/3;
+    justify-self: center;
+}
+#display{
+    margin-top: 110px;
+    background-color: grey;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    padding-top:10px;
+    font-weight: bold;
+}
+#power{
+    background-color: black;
+    margin-bottom: 10px;
+    display: grid;
+    height: 22px;
+    width: 54px;
+    margin-top: 60px;
+    padding: 4px;
+}
+#bank{
+    display: grid;
+    margin-top: 20px;
+    background-color: black;   
+    height: 22px;
+    width: 54px;
+    margin-top: 180px;
+    padding: 4px;
+    display: grid;
+}
+.azulito{
+    background-color: blue;
+    width: 50%;
+    height: 100%;
 }
